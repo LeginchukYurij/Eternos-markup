@@ -1,11 +1,12 @@
 .swap-module  {
-
-
+  padding-bottom: 72px;
+  
   &__head {
     display: flex;
     gap: 20px;
     justify-content: space-between;
     border-bottom: 1px solid #676767;
+    margin-bottom: 32px;
   }
 
   &__tabs  {
@@ -14,6 +15,9 @@
       gap: 32px;
 
       li button {
+        display: flex;
+        align-items: center;
+        gap: 8px;
         color: var(--txt);
         font-size: rem(20);
         font-style: normal;
@@ -45,10 +49,107 @@
     }
   }
 
+  &__form {
+    .btn-submit {
+      margin-top: 32px;
+    }
+  }
+
   .rate {
     font-size: rem(20);
     font-style: normal;
     font-weight: 400;
     line-height: lh(24, 20);
+  }
+
+  &__cryptocols {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+.cryptocur {
+  &__preview  {
+    padding: 40px 64px;
+    border-radius: 10px;
+    background: var(--spirit);
+    backdrop-filter: var(--spiritBlur);
+    display: grid;
+    grid-template-columns: 173px 1fr;
+    gap: 40px;
+  }
+
+  &__preview-info  {
+    padding-top: 5px;
+
+    span {
+      display: block;
+      font-size: rem(14);
+      line-height: lh(16, 14);
+      margin-bottom: 16px;
+    }
+
+    strong {
+      display: block;
+      font-size: rem(24);
+      font-weight: 600;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    small {
+      display: block;
+      font-size: rem(16);
+      line-height: 1;
+    }
+
+    .lbl {
+        margin-top: 16px;
+        padding: 10px 17px;
+        width: fit-content;
+        border-radius: 10px;
+        border: 1px solid #959595;
+        color: #959595;
+        font-size: rem(16);
+        line-height: 1;
+        text-transform: uppercase;
+    }
+  }
+
+  &__input-wrap {
+    position: relative;
+    margin-top: 16px;
+    height: 58px;
+    border-radius: 10px;
+    background: var(--spirit);
+    backdrop-filter: var(--spiritBlur);
+    overflow: hidden;
+
+    input {
+      width: 100%;
+      height: 100%;
+      text-align: right;
+      padding: 0 16px 0 100px;
+      border: none;
+      background: none;
+      font-size: rem(14);
+      font-style: normal;
+      font-weight: 400;
+      line-height: lh(16, 14);
+      color: var(--txt);
+    }
+
+    label {
+      position: absolute;
+      top: 50%;
+      left: 16px;
+      transform: translateY(-50%);
+      font-size: rem(14);
+      font-style: normal;
+      font-weight: 400;
+      line-height: lh(16, 14);
+      color: var(--txt);
+    }
   }
 }

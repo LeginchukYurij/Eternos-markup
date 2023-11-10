@@ -1,3 +1,5 @@
+include ../../components/btn/btn
+
 .swap-module 
   .swap-module__head 
     .swap-module__tabs 
@@ -7,6 +9,46 @@
         li 
           button(type="button") Fixed rate
         li 
-          button(type="button") Anonymous Swap
+          button(type="button") 
+            | Anonymous Swap
+            include ../../components/tooltip/tooltip
+
 
     .rate 1 ETH ≈ 0.0618 BTC
+
+  form(action="#" name="swap-cryptocur").swap-module__form
+    .swap-module__cryptocols
+      .cryptocur
+        .cryptocur__preview 
+          .cryptocur__preview-logo 
+            img(src="img/svg/btc.svg", alt="#" width="173" height="143")
+
+          .cryptocur__preview-info 
+            span YOU SEND
+            strong BTC
+            small Bitcoin
+
+            .lbl Bitcoin network
+
+        .cryptocur__input-wrap
+          label(for="cur1") BTC
+          input(type="number" name="cur1" id="cur1" value="0")
+
+      .cryptocur
+        .cryptocur__preview 
+          .cryptocur__preview-logo 
+            img(src="img/svg/eth.svg", alt="#" width="173" height="143")
+
+          .cryptocur__preview-info 
+            span YOU RECEIVE
+            strong ETH
+            small Etherium
+
+            .lbl Bitcoin network
+
+        .cryptocur__input-wrap
+          label(for="cur2") ETH
+          input(type="number" name="cur2" id="cur2" value="0")
+
+    +btn-button('submit', 'btn-submit large center xxl')
+      | SWAP NOW
