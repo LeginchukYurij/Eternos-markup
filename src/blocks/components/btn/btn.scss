@@ -1,0 +1,33 @@
+.primery-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  border-radius: 10px;
+  border: 1px solid var(--accent);
+  padding: 8px 27px;
+  background-color: var(--accent);
+  color: var(--txt);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: lh(24, 16);
+  text-decoration: none;
+  min-width: 180px;
+  transition: all .2s ease-in;
+
+  &:not(.primery-btn--brd):hover {
+    background-color: var(--accentHover);
+    border-color: var(--accentHover);
+  }
+
+  &--brd {
+    border-color: #F8F8F8;
+    background: none;
+
+    &:hover {
+      background-color: var(--accent);
+      border-color: var(--accent);
+    }
+  }
+}

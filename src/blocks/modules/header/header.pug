@@ -1,0 +1,22 @@
+include ../../components/btn/btn
+include ../../components/nice-select/nice-select
+
+header.main-header 
+  .container 
+    .main-header__inner 
+      .logo 
+        img(src="img/svg/logo.svg", alt="Eternos logo" width="155" height="40")
+
+
+      include ../../components/nav-menu/nav-menu
+
+      .main-header__btns 
+        +btn-link('#')
+          | Partner account
+        
+        +btn-button('button', 'connect-wallet primery-btn--brd')
+          | Connect Wallet
+
+      +nice-select('lang-select', 'lang')
+        option(value="Eng") Eng 
+        option(value="Ru") Ru  
