@@ -1,0 +1,36 @@
+include ../../components/title/title
+
+section.advantages-module.section
+  +h2('center upper advantages-module__title')
+    | Advantages
+
+  .advantages-module__grid 
+    .advantages-module__card 
+      .advantages-module__card-text
+        +h3('advantages-module__card-title')
+          | Onion available
+
+        p Eternos is available in Tor Browser, you can find the .onion domain at the bottom of the page.
+
+      .advantages-module__card-img
+        img(src="img/advantages/onion.webp", alt="#" width="134" height="134")
+
+    .advantages-module__card 
+      .advantages-module__card-text
+        +h3('advantages-module__card-title')
+          | Support via Jabber & qTox
+
+        p You can contact our support via jabber or qTox, it's much safer than telegram or email. All information can be found on the <a href="#">“Contacts”</a> page.
+
+      .advantages-module__card-img
+        img(src="img/advantages/support.svg", alt="#" width="121" height="121")
+
+    .advantages-module__card 
+      .advantages-module__card-text
+        +h3('advantages-module__card-title')
+          | KYC-free zone
+
+        p We have a strict anti-kyc policy, which means that we will never under any circumstances require our users to undergo KYC procedures. Welcome to the free zone.
+
+      .advantages-module__card-img
+        img(src="img/advantages/KYC.webp", alt="#" width="317" height="245")

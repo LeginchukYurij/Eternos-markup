@@ -1,0 +1,33 @@
+include ../../../components/btn/btn
+
+mixin cabinet-module(cls="") 
+  div(class=cls + " cabinet-module")
+    aside.cabinet-sidebar 
+      ul 
+        li 
+          a(href="/payout.html").active
+            img(src="img/svg/money.svg", alt="#" width="34.696" height="34.696")
+            | Payouts 
+
+        li 
+          a(href="/history.html")
+            img(src="img/svg/time.svg", alt="#" width="30" height="30")
+            | History 
+
+        li 
+          a(href="/settings.html")
+            img(src="img/svg/settings.svg", alt="#" width="30" height="30")
+            | Settings
+
+
+      .cabinet-sidebar__actions 
+        +btn-button('button', 'm fzm w-full')
+          | Api key
+      
+        +btn-button('button', 'm fzm w-full')
+          | Link
+
+    .cabinet-module__content
+      include ../../../modules/cashback-module/cashback-module
+
+      block

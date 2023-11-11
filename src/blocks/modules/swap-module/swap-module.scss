@@ -66,10 +66,23 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+    position: relative;
+  }
+
+  &__replace-btn {
+    position: absolute;
+    top: 61px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    background: none;
+    border: none;
   }
 }
 
 .cryptocur {
+
+
   &__preview  {
     padding: 40px 64px;
     border-radius: 10px;
@@ -78,6 +91,7 @@
     display: grid;
     grid-template-columns: 173px 1fr;
     gap: 40px;
+    min-height: 223px;
   }
 
   &__preview-info  {

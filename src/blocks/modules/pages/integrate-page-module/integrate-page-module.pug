@@ -1,0 +1,19 @@
+include ../../../components/title/title
+include ../../../components/feature-row/feature-row
+include ../../../components/actions-row/actions-row
+include ../../../components/btn/btn
+
+.integrate-page-module
+  +h1('upper')
+    | Integrate Eternos
+
+  +feature-row('to-left')
+
+  +actions-row
+    +btn-link('#')
+      | Visit API
+    
+    +btn-button('button', 'connect-wallet primery-btn--brd large-m ')
+      | Create partner account 
+
+  include ../../faq-module/faq-module-integrate

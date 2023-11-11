@@ -8,7 +8,7 @@ block variables
 block content
 	include ../blocks/modules/header/header
 
-	main
+	main.main-page
 		.container
 			+h1('center page-title') 
 				| NO KYC CRYPTO EXCHANGE
@@ -17,6 +17,8 @@ block content
 
 			include ../blocks/modules/swap-module/swap-module
 			include ../blocks/modules/swap-process-module/swap-process-module
+			include ../blocks/modules/advantages-module/advantages-module
+			include ../blocks/modules/integrate-module/integrate-module
 
 	include ../blocks/modules/footer/footer
 

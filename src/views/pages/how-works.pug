@@ -1,0 +1,22 @@
+extends ../layouts/default
+include ../helpers/mixins
+include ../../blocks/components/title/title
+
+block variables
+	- const title = "Eternos"
+
+block content
+	include ../../blocks/modules/header/header
+
+	main
+		.container
+			include ../../blocks/modules/how-swap-module/how-swap-module
+			include ../../blocks/modules/anonymous-swap/anonymous-swap
+			include ../../blocks/modules/info-section-module/info-section-module
+			include ../../blocks/modules/faq-module/faq-module
+
+	include ../../blocks/modules/footer/footer
+
+block scripts
+	script(src="js/vendor.js")
+	script(src="js/main.js")

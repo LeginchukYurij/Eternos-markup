@@ -325,17 +325,19 @@ button,
 input,
 select,
 textarea {
-    color: #222;
+    color: #fff;
 }
 
 
 ::-moz-selection {
-    background: #b3d4fc;
+    background: var(--accent);
+    color: #fff;
     text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
+    background: var(--accent);
+    color: #fff;
     text-shadow: none;
 }
 
@@ -388,6 +390,10 @@ body {
     min-height: calc(100 * var(--vh, 1vh));
     display: grid;
     grid-template-rows: auto 1fr auto;
+    background-image: url('../img/bg.webp');
+    background-position: top 0 center;
+    background-size: auto;
+    background-repeat: no-repeat;
 }
 
 *, *:after, *:before {
@@ -414,6 +420,10 @@ img {
     text-align: center;
 }
 
+.upper {
+    text-transform: uppercase;
+}
+
 main {
     padding-top: 80px;
     padding-bottom: 144px;
@@ -430,4 +440,21 @@ main {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 40px;
+}
+
+section h2, section .h2 {
+    margin-bottom: 32px;
+}
+
+.section {
+    padding-top: 72px;
+    padding-bottom: 72px;
+}
+
+a, button {
+    transition: all .2s ease-in;
+}
+
+.main-page {
+    padding-top: 72px;
 }

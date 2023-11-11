@@ -1,0 +1,13 @@
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  a svg path {
+    transition: fill .2s ease-in;;
+  }
+
+  a:hover svg path {
+    fill: var(--accent);
+  }
+}

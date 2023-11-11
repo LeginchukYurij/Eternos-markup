@@ -1,0 +1,82 @@
+.how-swap-module {
+  display: flex;
+  gap: 16px;
+  padding-top: 0;
+
+  &__text {
+    width: 47.84%;
+    min-width: 47.84%;
+  }
+
+  &__img {
+    width: calc(100% - 47.84% - 16px);
+
+    &-slider {
+
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.25);
+      
+      .swiper-slide {
+        img {
+          width: 100%;
+          height: 100%;
+          max-width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 32px;
+  }
+
+  &__text-slider {
+    strong {
+      display: block;
+      font-size: rem(32);
+      font-weight: 500;
+      line-height: lh(40, 32);
+      margin-bottom: 16px;
+    }
+
+    p {
+      font-size: rem(20);
+      line-height: lh(24, 20);
+      max-width: 418px;
+    }
+
+    .swiper-pagination-fraction {
+      position: static;
+      text-align: left;
+      font-size: rem(24);
+      line-height: 1;
+      color: var(--accent);
+      margin-bottom: 16px;
+
+      .swiper-pagination-current {
+        color: var(--txt);
+      }
+    }
+  }
+}
+
+.custom-dot-pagination {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+
+  .dot {
+    width: 30px;
+    height: 4px;
+    border-radius: 11px;
+    background: #848484;
+    transition: background-color .2s ease-in;
+    cursor: pointer;
+
+    &.active {
+      background-color: var(--accent);
+    }
+  }
+}

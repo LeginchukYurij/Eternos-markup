@@ -1,0 +1,94 @@
+.input-wrap {
+  width: 100%;
+
+  input, textarea {
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(8px);
+    padding: 0 16px;
+    height: 58px;
+    display: block;
+    width: 100%;
+    border: none;
+    font-size: rem(20);
+    font-style: normal;
+    font-weight: 400;
+    color: var(--txt) !important;
+    transition: background 9999999999s ease;
+
+    &::placeholder {
+      color: var(--txt);
+      font-family: Inter;
+      font-size: rem(20);
+      font-weight: 400;
+    }
+  }
+
+  textarea {
+    min-height: 214px;
+    height: auto;
+    resize: vertical;
+    resize: none;
+    padding: 16px;
+  }
+
+  &.error {
+    input, textarea {
+      background: rgba(255, 0, 0, 0.08);
+      color: var(--error);
+
+      &::placeholder {
+        color: var(--error);
+      }
+    }
+  }
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: #fff;
+}
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #fff;
+}
+
+.select-wrap {
+  position: relative;
+  z-index: 1;
+
+  & > select {
+    position: absolute;
+  }
+
+  .select {
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(8px);
+    height: 58px;
+    padding: 16px;
+    width: 100%;
+
+    &:after {
+      right: 17px;
+      width: 15px;
+      height: 10px;
+      background-image: url(../img/svg/accordion-arr.svg);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      border: none;
+      transform: rotate(0);
+      transform-origin: center;
+    }
+
+    .nice-select-dropdown {
+      top: calc(100% + 8px);
+      width: 100%;
+
+      .option.selected {
+        display: block;
+        font-weight: 400;
+      }
+    }
+
+  }
+}

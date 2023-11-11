@@ -1,0 +1,51 @@
+.settings-module {
+  max-width: 895px;
+  width: 100%;
+
+  &__grid  {
+    display: grid;
+    grid-template-columns: 1fr 285px;
+    gap: 20px;
+  }
+
+  &__sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.settings-box  {
+  padding: 16px;
+  border-radius: 10px;
+  background: #222;
+}
+
+.settings-item  {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+  & + .settings-item {
+    margin-top: 40px;
+  }
+
+  &__field {
+    span {
+      display: block;
+      color: #A7A7A7;
+      font-size: rem(16);
+      font-style: normal;
+      font-weight: 400;
+      line-height: lh(24, 16); 
+      margin-bottom: 8px;
+    }
+
+    strong {
+      display: block;
+      font-size: rem(16);
+      line-height: lh(24, 16); 
+    }
+  }
+}

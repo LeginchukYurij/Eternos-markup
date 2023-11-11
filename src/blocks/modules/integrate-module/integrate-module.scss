@@ -1,0 +1,50 @@
+.integrate-module {
+  padding-top: 84px;
+  padding-bottom: 0;
+
+  &__title {
+    margin-bottom: 24px;
+  }
+}
+
+.features-row  {
+  text-align: center;
+  font-size: rem(20);
+  font-style: normal;
+  font-weight: 400;
+  line-height: lh(24, 20);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 40px;
+
+  li:not(:last-child) {
+    &:after {
+      content: "/";
+      display: inline-block;
+      margin: 0 20px;
+    }
+  }
+}
+
+.logos-grid  {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 20px;
+  row-gap: 32px;
+}
+
+.logo-item  {
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(5px);
+  padding: 19px 20px 18px 20px;
+  max-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    max-height: 100%;
+  }
+}

@@ -1,0 +1,51 @@
+.anonymous-swap-module {
+  &__title {
+    margin-bottom: 24px;
+  }
+
+  &__subtitle {
+    font-weight: 500;
+    margin-bottom: 32px;
+  }
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+
+  &--x3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+.blue-card  {
+  border-radius: 10px;
+  background: linear-gradient(180deg, rgba(37, 37, 37, 0.40) 0%, rgba(22, 67, 227, 0.40) 100%);
+  padding: 24px;
+  backdrop-filter: blur(5px);
+  min-height: 236px;
+
+  &__title {
+    margin-bottom: 16px;
+  }
+
+  p {
+    font-size: rem(20);
+    font-style: normal;
+    font-weight: 400;
+    line-height: lh(24, 20);
+  }
+
+  &:nth-child(2) {
+    background: linear-gradient(70deg, rgba(37, 37, 37, 0.40) 1.14%, rgba(22, 67, 227, 0.40) 96.17%);
+  }
+
+  &:nth-child(5) {
+    background: linear-gradient(180deg, rgba(22, 67, 227, 0.40) 0%, rgba(37, 37, 37, 0.40) 100%);
+  }
+
+  &:nth-child(6) {
+    background: linear-gradient(242deg, rgba(37, 37, 37, 0.40) 19.42%, rgba(22, 67, 227, 0.40) 98.88%);
+  }
+}

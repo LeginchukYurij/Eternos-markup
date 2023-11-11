@@ -1,0 +1,41 @@
+.info-section-module {
+  display: flex;
+  flex-direction: column;
+  gap: 57.86px;
+
+  &__row {
+    display: flex;
+    gap: 122px;
+    align-items: center;
+    
+
+    &-img {
+      min-width: 49.17%;
+      width: 49.17%;
+    }
+
+    &-text  {
+      min-width: calc(100% - 49.17% - 122px);
+      width: calc(100% - 49.17% - 122px);
+
+      .row-text__title {
+        margin-bottom: 32px;
+      }
+
+      p {
+        font-size: rem(20);
+        line-height: lh(24, 20); 
+        
+        & + p {
+          margin-top: 16px;
+        }
+      }
+    }
+
+    &--reverse {
+      .info-section-module__row-text  {
+        order: -1;
+      }
+    }
+  }
+}

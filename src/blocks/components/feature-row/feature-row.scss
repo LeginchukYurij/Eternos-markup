@@ -1,0 +1,23 @@
+.features-row  {
+  text-align: center;
+  font-size: rem(20);
+  font-style: normal;
+  font-weight: 400;
+  line-height: lh(24, 20);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 40px;
+
+  li:not(:last-child) {
+    &:after {
+      content: "/";
+      display: inline-block;
+      margin: 0 20px;
+    }
+  }
+
+  &.to-left {
+    justify-content: flex-start;
+  }
+}

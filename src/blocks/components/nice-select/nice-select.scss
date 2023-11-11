@@ -71,7 +71,7 @@
 .nice-select .nice-select-dropdown {
   transform: translateY(20px);
   transition: all .3s ease;
-
+  margin: 0;
   width: max-content;
   top: calc(100% + 25px);
   left: 50%;
@@ -102,7 +102,7 @@
 
 
 .nice-select.open:after {
-  transform: rotate(-180deg);
+  transform: rotate(0);
 }
 
 .nice-select.open .nice-select-dropdown {

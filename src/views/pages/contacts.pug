@@ -1,0 +1,19 @@
+extends ../layouts/default
+include ../helpers/mixins
+
+
+block variables
+	- const title = "Eternos | Contacts"
+
+block content
+	include ../../blocks/modules/header/header
+
+	main
+		.container
+			include ../../blocks/modules/pages/contacts-page-module/contacts-page-module
+
+	include ../../blocks/modules/footer/footer
+
+block scripts
+	script(src="js/vendor.js")
+	script(src="js/main.js")

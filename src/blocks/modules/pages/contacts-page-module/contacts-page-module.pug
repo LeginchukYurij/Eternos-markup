@@ -1,0 +1,39 @@
+include ../../../components/title/title
+include ../../../components/btn/btn
+include ../../../components/input-area/input-area
+include ../../../components/form/form
+
+.contacts-page-module
+  +h1('upper')
+    | Contacts
+
+  .contacts-page-module__grid 
+    +form('contact-form')
+      +select('select')
+        option(value="#") Theme of the appeal
+        option(value="#") Option 2
+        option(value="#") Option 3
+
+      +input('email', 'email', 'E-mail')
+      +input('exchange_id', 'exchange_id', 'Exchange ID')
+      +area('massage', 'massage', 'Massage')
+      +btn-button('submit', 'xxl w-full')
+        | Send
+
+    .contacts-info 
+      +h2('h3 contacts-info__title')
+        | Jabber & qTox
+
+      .contacts-info__box 
+        ul
+          li
+            span Jabber1:
+            a(href="mailto: obmen@eternos.fi")  obmen@eternos.fi
+
+          li 
+            span Jabber2:
+            a(href="mailto: eternos@exploit.im  ") eternos@exploit.im  
+
+          li 
+            span qTox:
+            span.token 1F2F83AB634455DE2FF21DE1CFBF3D5963E666FCFTDA18D3071D2B5F27012F7E7DEAB218613

@@ -1,4 +1,5 @@
 include ../../components/btn/btn
+include ../../components/tooltip/tooltip
 
 .swap-module 
   .swap-module__head 
@@ -11,7 +12,7 @@ include ../../components/btn/btn
         li 
           button(type="button") 
             | Anonymous Swap
-            include ../../components/tooltip/tooltip
+            +tooltip
 
 
     .rate 1 ETH ≈ 0.0618 BTC
@@ -33,6 +34,9 @@ include ../../components/btn/btn
         .cryptocur__input-wrap
           label(for="cur1") BTC
           input(type="number" name="cur1" id="cur1" value="0")
+
+      button(type="button" aria-label="Replace currencies").swap-module__replace-btn
+        img(src="img/change.webp", alt="Replace currencies" width="100" height="100")
 
       .cryptocur
         .cryptocur__preview 

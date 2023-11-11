@@ -1,0 +1,13 @@
+mixin input(tp="text", nm="", placeholder="", cls="")
+  div(class=cls + " input-wrap")
+    input(type=tp name=nm placeholder=placeholder autocomplite="off")
+
+
+mixin area(tp="text", nm="", placeholder="", cls="")
+  div(class=cls + " input-wrap")
+    textarea(name=nm placeholder=placeholder autocomplite="off")
+
+mixin select(nm="", cls="")
+  .select-wrap
+    select(name=nm aria-label=nm class=cls + " select")
+      block

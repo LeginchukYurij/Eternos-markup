@@ -1,0 +1,53 @@
+.swap-process-module {
+
+  &__steps  {
+    display: grid;
+    grid-template-columns: 40.67%  32.33% 23.75%;
+    gap: 20px;
+  }
+
+  &__step {
+    min-height: 363px;
+    border-radius: 10px;
+    border: 1px solid #454545;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-position: top 0 left 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &:nth-child(1) {
+      background-image: url('../img/steps/1.webp');
+    }
+
+    &:nth-child(2) {
+      background-image: url('../img/steps/2.webp');
+    }
+
+    &:nth-child(3) {
+      background-image: url('../img/steps/3.webp');
+    }
+
+    &-body {
+      border-top: 1px solid #454545;
+      padding: 26px 31px 32px 32px;
+      min-height: 153px;
+    }
+
+    &-title {
+      margin-bottom: 6px;
+    }
+
+    span {
+      color: #D8D8D8;
+      font-size: rem(20);
+      font-style: normal;
+      font-weight: 400;
+      line-height: lh(24, 20);
+      display: block;
+    }
+  }
+}
