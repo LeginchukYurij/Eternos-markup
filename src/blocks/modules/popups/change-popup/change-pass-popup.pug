@@ -1,0 +1,31 @@
+include ../../../components/title/title
+include ../../../components/btn/btn
+include ../../../components/input-area/input-area
+include ../../../components/form/form
+include ../../../components/checkbox/checkbox
+
+.popup__inner
+  <button class="close-popup">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+      <g clip-path="url(#clip0_433_1346)">
+        <path d="M24 1.37142L22.6286 0L12 10.6286L1.37142 0L0 1.37142L10.6286 12L0 22.6286L1.37142 24L12 13.3714L22.6286 24L24 22.6286L13.3714 12L24 1.37142Z" fill="white"/>
+      </g>
+      <defs>
+        <clipPath id="clip0_433_1346">
+          <rect width="24" height="24" fill="white"/>
+        </clipPath>
+      </defs>
+    </svg>
+  </button>
+
+  +h2('popup__title upper center')
+    | Change payout address
+  
+  +form('login-form')
+      +password('password', 'old_pass', 'Enter your old password')
+      +password('password', 'new_pass', 'Enter your new password')
+      +password('password', 'confirm_new_pass', 'Confirm your new password')
+      +checkbox('checkbox', 'remember', 'remember2', '', 'Remember password', true)
+
+      +btn-button('submit', 'xxl w-full')
+        | Confirm changes

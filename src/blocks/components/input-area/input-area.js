@@ -9,4 +9,29 @@ import NiceSelect from "../../../../node_modules/nice-select2/dist/js/nice-selec
         });
     }
 
+    const togglePasswordBtns = document.querySelectorAll(".toggle-pass-visibility");
+
+    if (togglePasswordBtns.length) {
+        togglePasswordBtns.forEach(btn => {
+            btn.addEventListener("click", function (e) {
+                e.preventDefault();
+
+                const input = this.closest(".input-wrap").querySelector("input");
+
+                if (input) {
+                    const attr = input.getAttribute("type");
+
+                    this.classList.toggle("visible");
+
+                    if (attr === "password") {
+                        input.setAttribute("type", "text");
+                        return;
+                    }
+
+                    input.setAttribute("type", "password");
+                }
+            });
+        });
+    }
+
 })();

@@ -1,0 +1,42 @@
+include ../../../components/title/title
+
+.exchanging-module__title-box
+  +h1('h4 upper center')
+    | Waiting for you to send 1000 USDT...
+
+  p.exchanging-module__subtitle 1 USDT = 0.00003322 BTC
+
+
+.exchanging-send
+  .exchanging-send__inner
+    .exchanging-send__info 
+      .e-info-item 
+        span Send exactly
+        strong 29.52 USDT
+      
+      .e-info-item 
+        span To address 
+          .a-lbl TRC - 20
+
+        input.readonly-field(type="text" readonly name="address" value="odfldsfksd125 . . . jljndflsjnfkls")
+
+        .e-info-item__actions 
+          button(type="button" aria-lavel="Copy address").txt-btn
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <g clip-path="url(#clip0_447_834)">
+              <path d="M18.4384 0.353516H7.38309C6.59518 0.353516 5.95422 0.994516 5.95422 1.78239V5.13604C6.25792 5.13604 12.2181 5.13604 12.4561 5.13604C13.9632 5.13604 15.1894 6.36217 15.1894 7.8693C15.1894 8.15143 15.1894 14.195 15.1894 14.2666H18.4384C19.2263 14.2666 19.8673 13.6256 19.8673 12.8377V1.78239C19.8672 0.994516 19.2263 0.353516 18.4384 0.353516Z" fill="#1643E3"/>
+              <path d="M12.456 6.44043H1.40075C0.612876 6.44043 -0.0281677 7.08143 -0.0281677 7.86934V18.9246C-0.0281242 19.7126 0.612832 20.3536 1.40075 20.3536H12.456C13.244 20.3536 13.885 19.7126 13.885 18.9247V7.86934C13.885 7.08143 13.2439 6.44043 12.456 6.44043Z" fill="#1643E3"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_447_834">
+              <rect width="20" height="20" fill="white" transform="translate(0 -0.00976562)"/>
+              </clipPath>
+              </defs>
+            </svg>
+
+            | Copy address
+
+    .exchanging-send__qr
+      img(src="img/qr.svg", alt="#" width="227" height="226")
+
+  sapn.exchanging-send__note.center You will receive 1.58294 ETH

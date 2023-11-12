@@ -34,6 +34,39 @@ include ../../../components/btn/btn
 
     aside.settings-module__sidebar
       .settings-box
-        
+        .fa2
+          .fa2__title
+            strong 2FA
+            small SOON
+
+          .fa2__wrapper 
+            .fa2__text 
+              span Authenticator
+              strong 6-digist one-time code
+
+            .2-fa__control-wrapper 
+              include ../../../components/check-slider/check-slider
+
+
+          .apps 
+            span.apps__title Supported apps
+
+            .app 
+              .ic
+                img(src="img/svg/authy.svg", alt="#" width="20" height="20")
+
+              strong Authy
+
+            .app 
+              .ic 
+                img(src="img/svg/google-authenticator.svg", alt="#" width="20" height="20")
+
+              strong Google Authenticator
 
       .settings-box
+        .subscribtion-level 
+          strong.subscribtion-level__title Subscription level 
+
+          .level 
+            span Your level
+            strong VIP

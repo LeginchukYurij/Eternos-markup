@@ -6,4 +6,55 @@
   button[type="submit"] {
     margin-top: 16px;
   }
+
+  &-note {
+    font-size: rem(16);
+    font-style: normal;
+    font-weight: 400;
+    line-height: lh(24, 16); 
+    
+    a {
+      text-decoration: none;
+    }
+
+    & + button[type="submit"] {
+      margin-top: 8px;
+    }
+
+    &.xs {
+      font-size: rem(14);
+    }
+  }
+
+  &-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: 8px;
+
+    button[type="submit"]  {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+  p {
+    font-size: rem(14);
+    line-height: lh(24, 14);
+  }
+}
+
+.popup__inner .form .input-wrap input {
+  height: 62px;
+}
+
+.forgot-form  button[type="submit"] {
+  margin-top: 8px;
+}
+
+.error-message {
+  color: var(--error);
+  font-size: rem(14);
+  line-height: lh(16, 14);
+  margin-bottom: -4px;
 }

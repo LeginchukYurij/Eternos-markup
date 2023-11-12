@@ -1,0 +1,32 @@
+mixin checkbox(itype, name, id, cls, label, checked, strong)
+  if checked 
+    div(class="check-wrap " + cls)
+      .check 
+        input(type=itype name=name id=id checked)
+        .check__mask
+          img(src="img/svg/Done.svg", alt="#" width="16" height="16")
+
+      .check-label
+        if label
+          label(for=id)=label
+            if strong 
+              strong= strong 
+
+          block
+          
+          
+
+  else 
+    div(class="check-wrap " + cls)
+      .check 
+        input(type=itype name=name id=id)
+        .check__mask
+          img(src="img/svg/Done.svg", alt="#" width="16" height="16")
+
+      .check-label
+        if label
+          label(for=id)=label
+            if strong 
+              strong= strong   
+
+          block

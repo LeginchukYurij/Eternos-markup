@@ -458,3 +458,27 @@ a, button {
 .main-page {
     padding-top: 72px;
 }
+
+.exchanging {
+    padding-top: 40px;
+    background-color: var(--bg);
+}
+
+article {
+    h1 {
+        margin-bottom: 32px;
+    }
+
+    p {
+        font-size: rem(20);
+        line-height: lh(24, 20); 
+    }
+}
+
+.text-page {
+    background-color: var(--bg);
+    background-image: url('../img/bg2.webp');
+    background-position: center bottom 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+}

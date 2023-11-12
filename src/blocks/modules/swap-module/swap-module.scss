@@ -1,5 +1,11 @@
 .swap-module  {
   padding-bottom: 72px;
+
+  &__lbl {
+    margin-bottom: 28px;
+    font-size: rem(24);
+    line-height: 1;
+  }
   
   &__head {
     display: flex;
@@ -7,6 +13,12 @@
     justify-content: space-between;
     border-bottom: 1px solid #676767;
     margin-bottom: 32px;
+  }
+
+  &__note {
+    color: #6A6A6A;
+    font-size: rem(14);
+    line-height: lh(16, 14);
   }
 
   &__tabs  {
@@ -50,8 +62,21 @@
   }
 
   &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
     .btn-submit {
       margin-top: 32px;
+    }
+    
+  }
+
+  &-full {
+    padding-bottom: 0;
+
+    .swap-module__form .btn-submit {
+      margin-top: 7px;
     }
   }
 

@@ -1,5 +1,7 @@
 .main-header {
   background-color: var(--headerBG);
+  position: relative;
+  z-index: 2;
 
   .logo {
     margin-right: 7.33%;

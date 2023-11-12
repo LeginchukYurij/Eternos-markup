@@ -1,0 +1,19 @@
+include ../../../components/title/title
+include ../../../components/tooltip/tooltip
+include ../../../components/txt-link/txt-link
+include ../../../components/btn/btn
+
+.exchanging-module__title-box
+  +h1('h4 upper center red')
+    | Expired
+
+
+.exchanging-expired-module 
+  img(src="img/svg/expired.svg", alt="#" width="205.253" height="237")
+
+  
+.exchanging-expired-module__actions 
+  p The AI could not detect a deposit and the locked-in exchange rate has expired. Bad job!
+
+  +btn-button('button', 'primery-btn--brd xl upper')
+    | Swap again

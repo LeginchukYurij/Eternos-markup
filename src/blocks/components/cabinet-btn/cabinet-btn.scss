@@ -4,6 +4,7 @@
   border-radius: 10px;
   position: relative;
   transition: background-color .2s ease-in;
+  cursor: pointer;
 
   &:hover {
     background-color: #343434;

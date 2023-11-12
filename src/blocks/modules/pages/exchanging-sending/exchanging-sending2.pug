@@ -1,0 +1,25 @@
+include ../../../components/title/title
+include ../../../components/tooltip/tooltip
+
+.exchanging-module__title-box
+  +h1('h4 upper center')
+    | Sending you BTC...
+
+  .exchanging-module__subtitle.g8.xl
+    | 1 USDT = 0.00003322 BTC
+    +tooltip('xs')
+
+.process-head
+  .process-head__item 
+    span ReceivED
+    strong 30 USDT
+
+  .process-head__item 
+    span YOU GET
+    strong 30 USDT
+
+
+.exchanging-sending-module 
+  .exchanging-sending-module__currencies
+      img(src="img/cur/btc-big.svg", alt="#" width="198" height="198")
+      img(src="img/cur/eth-big.svg", alt="#" width="198" height="198")

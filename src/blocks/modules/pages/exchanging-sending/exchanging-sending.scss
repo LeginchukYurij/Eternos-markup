@@ -1,0 +1,19 @@
+.exchanging-sending-module  {
+
+  &__currencies {
+    padding-top: 31px;
+    padding-bottom: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img:nth-child(1) {
+      position: relative;
+      z-index: 1;
+    }
+
+    img:nth-child(2) {
+      margin-left: -73px;
+    }
+  }
+}

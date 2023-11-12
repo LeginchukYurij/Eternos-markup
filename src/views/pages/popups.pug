@@ -1,0 +1,64 @@
+extends ../layouts/default
+include ../helpers/mixins
+include ../../blocks/modules/pages/cabinet-module/cabinet-module
+include ../../blocks/components/title/title
+include ../../blocks/components/btn/btn
+include ../../blocks/components/popup-container/popup-container
+
+
+block variables
+	- const title = "History | Popups"
+
+block content
+	include ../../blocks/modules/header/header2
+
+	main
+		.container
+			button(type="button" data-trigger-modal="connect-wallet").primery-btn.upper Connect your wallet
+			<br>
+			button(type="button" data-trigger-modal="login").primery-btn.upper Login
+			<br>
+			button(type="button" data-trigger-modal="signup").primery-btn.upper Sign up
+			<br>
+			button(type="button" data-trigger-modal="forgot_pass").primery-btn.upper Forgot password?
+			<br>
+			button(type="button" data-trigger-modal="errors").primery-btn.upper Errors
+			<br>
+			button(type="button" data-trigger-modal="order-payout").primery-btn.upper Order payout
+			<br>
+			button(type="button" data-trigger-modal="order-address").primery-btn.upper Change payout address
+			<br>
+			button(type="button" data-trigger-modal="change-password").primery-btn.upper Change password
+
+
+	include ../../blocks/modules/footer/footer
+
+
+	+popupContainer('connect-wallet')
+			include ../../blocks/modules/popups/wallet-popup/wallet-popup
+	
+	+popupContainer('login')
+			include ../../blocks/modules/popups/auth-popup/login
+
+	+popupContainer('signup')
+			include ../../blocks/modules/popups/auth-popup/signin
+
+	+popupContainer('forgot_pass')
+			include ../../blocks/modules/popups/auth-popup/forgot
+		
+	+popupContainer('errors')
+			include ../../blocks/modules/popups/auth-popup/errors
+
+	+popupContainer('order-payout')
+			include ../../blocks/modules/popups/order-payout-popup/order-payout-popup
+		
+	+popupContainer('order-address')
+			include ../../blocks/modules/popups/change-popup/change-popup
+
+	+popupContainer('change-password')
+			include ../../blocks/modules/popups/change-popup/change-pass-popup
+
+
+block scripts
+	script(src="js/vendor.js")
+	script(src="js/main.js")

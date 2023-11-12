@@ -1,0 +1,35 @@
+include ../../../components/title/title
+include ../../../components/tooltip/tooltip
+include ../../../components/txt-link/txt-link
+include ../../../components/btn/btn
+
+.exchanging-module__title-box
+  +h1('h4 upper center')
+    | Swap complete
+
+  .exchanging-module__subtitle.g8.xl
+    | 1 USDT = 0.00003322 BTC
+    +tooltip('xs')
+
+.process-head
+  .process-head__item 
+    span ReceivED
+    strong 30 USDT
+
+  .process-head__item 
+    span SENT
+    small 0.000245678 BTC
+    +txt-link('#', 'btn') 
+      | View transaction
+
+
+
+.exchanging-complite-module 
+  img(src="img/svg/goodjob.svg", alt="#" width="128" height="143")
+
+  
+.exchanging-complite-module__actions 
+  span Network fees paid: 2.46 USD
+
+  +btn-button('button', 'primery-btn--brd xl upper')
+    | Swap again

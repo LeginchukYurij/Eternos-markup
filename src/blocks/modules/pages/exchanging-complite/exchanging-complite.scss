@@ -1,0 +1,26 @@
+.exchanging-complite-module  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -36px;
+ 
+  &__actions  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-top: 64px;
+
+    span {
+      display: block;
+      text-align: center;
+      font-size: 16px;
+      line-height: 16px; 
+      text-transform: uppercase;
+    }
+  }
+}
+
+.exchanging--complite .exchanging-module {
+  min-height: 664px;
+}

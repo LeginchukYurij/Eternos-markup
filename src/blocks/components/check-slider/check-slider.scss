@@ -1,0 +1,47 @@
+.check-slider {
+  position: relative;
+  width: 50px;
+  min-width: 50px;
+  height: 22px;
+  border-radius: 22px;
+  overflow: hidden;
+
+  input {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    cursor: pointer;
+
+    &:checked ~  .check-slider__track {
+      background-color: var(--accent);
+    }
+
+    &:checked ~  .check-slider__track .check-slider__ball  {
+      left: calc(100% - 20px);
+    }
+  }
+
+  &__track  {
+    width: 100%;
+    height: 100%;
+    background-color: #D4D7DC;
+    transition: background-color .2s ease-in;
+  }
+
+  &__ball  {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 2px;
+    transition: left .2s ease-in;
+  }
+  
+}

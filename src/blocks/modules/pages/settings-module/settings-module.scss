@@ -11,7 +11,8 @@
   &__sidebar {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 16px;
+    
   }
 }
 
@@ -19,6 +20,22 @@
   padding: 16px;
   border-radius: 10px;
   background: #222;
+
+  span {
+    display: block;
+    color: #A7A7A7;
+    font-size: rem(16);
+    font-style: normal;
+    font-weight: 400;
+    line-height: lh(24, 16); 
+    margin-bottom: 8px;
+  }
+
+  strong {
+    display: block;
+    font-size: rem(16);
+    line-height: lh(24, 16); 
+  }
 }
 
 .settings-item  {
@@ -32,20 +49,72 @@
   }
 
   &__field {
-    span {
-      display: block;
-      color: #A7A7A7;
-      font-size: rem(16);
-      font-style: normal;
-      font-weight: 400;
-      line-height: lh(24, 16); 
-      margin-bottom: 8px;
-    }
+    
+  }
 
-    strong {
-      display: block;
-      font-size: rem(16);
-      line-height: lh(24, 16); 
+  &__actions {
+    .primery-btn {
+      min-width: 144px;
     }
   }
+}
+
+.subscribtion-level {
+  &__title {
+    margin-bottom: 16px;
+    text-transform: uppercase;
+  }
+
+  .level {
+    span {
+      margin-bottom: 8px;
+    }
+  }
+}
+
+.fa2 {
+  &__title {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 8px;
+
+    strong {
+      text-transform: uppercase;
+    }
+
+    small {
+      font-size: rem(12);
+      line-height: lh(24, 12);
+      color: var(--accent);
+      text-transform: uppercase;
+    }
+  }
+
+  &__wrapper  {
+    display: flex;
+    justify-content: space-between;
+    gap: 29px;
+  }
+}
+
+.apps {
+  margin-top: 24px;
+
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  .app {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+
+    & + .app {
+      margin-top: 10px;
+    }
+  }
+}
+
+.settings .cashback-module {
+  display: none;
 }

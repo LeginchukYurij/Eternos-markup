@@ -1,0 +1,27 @@
+include ../../../components/title/title
+include ../../../components/btn/btn
+include ../../../components/input-area/input-area
+include ../../../components/form/form
+
+.popup__inner
+  <button class="close-popup">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+      <g clip-path="url(#clip0_474_1341)">
+        <path d="M24 1.37142L22.6286 0L12 10.6286L1.37142 0L0 1.37142L10.6286 12L0 22.6286L1.37142 24L12 13.3714L22.6286 24L24 22.6286L13.3714 12L24 1.37142Z" fill="white"/>
+      </g>
+      <defs>
+        <clipPath id="clip0_474_1341">
+          <rect width="24" height="24" fill="white"/>
+        </clipPath>
+      </defs>
+    </svg>
+  </button>
+
+  +h2('popup__title upper center')
+    | Forgot password?
+  
+  +form('forgot-form', 'forgot-form')
+    p Enter your email below and we'll send you a link to reset your password.
+    +input('email', 'email', 'E-mail')
+    +btn-button('submit', 'xxl w-full')
+      | Send instructions

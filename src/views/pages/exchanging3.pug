@@ -1,0 +1,23 @@
+extends ../layouts/default
+include ../helpers/mixins
+include ../../blocks/modules/pages/cabinet-module/cabinet-module
+include ../../blocks/components/exchanging-box/exchanging-box
+include ../../blocks/modules/pages/exchanging-module-1/exchanging-module-1
+
+block variables
+	- const title = "Eternos | Exchanging 3"
+
+block content
+	include ../../blocks/modules/header/header2
+
+	main.exchanging.exchanging--sending
+		.container
+			+exchanging-box
+				+exchanging-module
+					include ../../blocks/modules/pages/exchanging-sending/exchanging-sending
+
+	include ../../blocks/modules/footer/footer
+
+block scripts
+	script(src="js/vendor.js")
+	script(src="js/main.js")
