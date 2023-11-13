@@ -1,4 +1,5 @@
-mixin table 
-  .table-container 
-    table.table 
-      block
+mixin table(cls="") 
+  .table-scroll-container
+    .table-container 
+      div(class=cls + ' table') 
+        block

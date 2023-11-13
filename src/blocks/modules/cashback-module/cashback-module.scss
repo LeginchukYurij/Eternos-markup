@@ -44,3 +44,37 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .cashback-module {
+    padding: 16px;
+    margin-bottom: 24px;
+    gap: 20px;
+    background-image: url('../img/cachback-bg-mob.png');
+
+    &__text {
+      & > span {
+        font-size: rem(14);
+        line-height: lh(16, 14);
+        margin-bottom: 2px;
+      }
+
+      strong {
+        font-size: rem(20);
+        line-height: lh(24, 20);
+      }
+    }
+
+    .primery-btn {
+      padding-left: 29px;
+      padding-right: 29px;
+      padding-top: 9px;
+      padding-bottom: 9px;
+    }
+
+    &__total span {
+      font-size: rem(16);
+      line-height: lh(24, 16); 
+    }
+  }
+}

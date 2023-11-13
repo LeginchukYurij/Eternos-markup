@@ -2,6 +2,11 @@ mixin input(tp="text", nm="", placeholder="", cls="", value="")
   div(class=cls + " input-wrap")
     input(type=tp name=nm placeholder=placeholder autocomplite="off" value=value)
 
+mixin search(tp="text", nm="", placeholder="", cls="", value="")
+  div(class=cls + " input-wrap input-wrap--search")
+    img(src="img/svg/search.svg", alt="#" width="30" height="24")
+    input(type=tp name=nm placeholder=placeholder autocomplite="off" value=value)
+
 mixin password(tp="text", nm="", placeholder="", cls="", value="")
   div(class=cls + " input-wrap password")
     input(type=tp name=nm placeholder=placeholder autocomplite="off" value=value)

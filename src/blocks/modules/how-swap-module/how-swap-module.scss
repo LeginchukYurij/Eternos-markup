@@ -2,6 +2,7 @@
   display: flex;
   gap: 16px;
   padding-top: 0;
+  max-width: calc(100vw - 32px);
 
   &__text {
     width: 47.84%;
@@ -18,6 +19,7 @@
       box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.25);
       
       .swiper-slide {
+        width: 100% !important;
         img {
           width: 100%;
           height: 100%;
@@ -77,6 +79,38 @@
 
     &.active {
       background-color: var(--accent);
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .how-swap-module {
+    flex-direction: column;
+    padding-top: 0;
+    gap: 24px;
+
+    &__text, &__img {
+      width: 100%;
+      min-width: 100%;
+      gap: 24px;
+    }
+
+    &__title {
+      margin-bottom: 24px;
+    }
+
+    &__text-slider {
+      strong  {
+        font-size: rem(20);
+        line-height: lh(24, 20);
+        margin-bottom: 16px;
+      }
+
+      p {
+        font-size: rem(14);
+        line-height: lh(16, 14);
+      }
     }
   }
 }

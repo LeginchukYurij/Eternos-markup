@@ -92,3 +92,15 @@
     cursor: pointer;
   }
 }
+
+
+@media (max-width: 768px) {
+  .check-label label {
+    font-size: rem(14);
+    line-height: lh(16, 14);
+  }
+
+  .check-wrap {
+    align-items: center;
+  }
+}

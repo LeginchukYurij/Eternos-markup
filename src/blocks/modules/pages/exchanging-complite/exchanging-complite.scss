@@ -24,3 +24,47 @@
 .exchanging--complite .exchanging-module {
   min-height: 664px;
 }
+
+@media (max-width: 768px) {
+  .exchanging--complite .exchanging-module {
+    min-height: 547px;
+  }
+
+  .exchanging--complite .exchanging-module__subtitle.g8 {
+    margin-top: -10px;
+  }
+
+  .exchanging--complite  .process-head {
+    margin-top: 26px;
+  }
+
+
+  .exchanging--complite .process-head .process-head__item:nth-child(2) {
+    transform: translateY(147px);
+  }
+
+  .exchanging-complite-module {
+    padding-bottom: 47px;
+    padding-top: 6px;
+    
+
+    img {
+      width: 78px;
+    }
+
+    &__actions {
+      gap: 8px;
+
+      span {
+        font-size: rem(14);
+        line-height: lh(16, 14); 
+      }
+
+      .primery-btn {
+        font-size: rem(16);
+        line-height: lh(24, 16); 
+        padding: 8px 46px;
+      }
+    }
+  }
+}

@@ -9,3 +9,10 @@
   background: none;
   border: none;
 }
+
+@media (max-width: 768px) {
+  .txt-button {
+    font-size: rem(14);
+    line-height: lh(16, 14); 
+  }
+}

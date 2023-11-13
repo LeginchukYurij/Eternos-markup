@@ -96,9 +96,9 @@
 
   &__replace-btn {
     position: absolute;
-    top: 61px;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     z-index: 1;
     background: none;
     border: none;
@@ -158,7 +158,7 @@
 
   &__input-wrap {
     position: relative;
-    margin-top: 16px;
+    // margin-top: 16px;
     height: 58px;
     border-radius: 10px;
     background: var(--spirit);
@@ -192,3 +192,180 @@
     }
   }
 }
+
+
+@media (max-width: 1224px) {
+  .cryptocur {
+    &__preview {
+      padding: 40px 54px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .swap-module {
+    &__cryptocols {
+      grid-template-columns: 100%;
+    }
+
+    &__replace-btn {
+      width: 70px;
+      height: 70px;
+    }
+  }
+
+  .cryptocur {
+    &__preview {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+
+@media (max-width: 920px) {
+  .swap-module {
+    &__tabs {
+      width: 100%;
+      border-bottom: 1px solid #676767;
+    }
+
+    &__head {
+      flex-direction: column;
+      gap: 16px;
+      align-items: center;
+      border: none;
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .swap-module {
+    padding-bottom: 36px;
+
+    &__lbl {
+      margin-bottom: 24px;
+    }
+
+    &__note {
+      font-size: rem(12);
+      line-height: lh(16, 12); 
+    }
+
+    &__cryptocols {
+      grid-template-columns: 100%;
+      gap: 8px;
+    }
+
+    .input-wrap input {
+      padding-left: 16px;
+      padding-right: 16px;
+      font-size: rem(14);
+      line-height: lh(16, 14);
+
+      &::placeholder {
+        font-size: rem(14);
+        line-height: lh(16, 14);
+      }
+    }
+
+    &__replace-btn {
+      width: 49px;
+      height: 49px;
+      padding: 0;
+
+      & + .cryptocur  .cryptocur__preview {
+        padding-top: 26px;
+        padding-bottom: 16px;
+      }
+    }
+
+    &__form {
+      gap: 8px;
+    }
+
+    &__head {
+      margin-bottom: 24px;
+    }
+
+    
+
+    &__tabs {
+
+      ul {
+        gap: 16px;
+      }
+
+      ul li button {
+        font-size: rem(12);
+        line-height: lh(16, 12);
+      }
+    }
+
+    .rate {
+      font-size: rem(14);
+      line-height: lh(16, 14);
+    }
+
+    &__form .btn-submit {
+      margin-top: 16px;
+      border-radius: 8px;
+    }
+  } 
+
+
+  .cryptocur {
+    &__preview {
+      padding: 16px;
+      min-height: 152px;
+      gap: 24px;
+      padding-bottom: 26px;
+    }
+  
+    &__preview-logo {
+      max-width: 125.818px;
+    }
+  
+    &__preview-info {
+      padding-top: 0;
+  
+      span {
+        margin-bottom: 8px;
+      }
+  
+      strong {
+        font-size: rem(20);
+        line-height: lh(24, 20);
+        margin-bottom: 4px;
+      }
+  
+      small {
+        font-size: rem(14);
+        line-height: lh(16, 14);
+      
+      }
+  
+      .lbl {
+        font-size: rem(14);
+        line-height: lh(16, 14);
+        padding: 8px 12px;
+        margin-top: 8px;
+      }
+    }
+  
+    &__input-wrap {
+      height: 48px;
+    }
+  }
+
+  .swap-module-full .swap-module__form .btn-submit {
+    margin-top: 0px;
+  }
+
+  .swap-module-full {
+    padding-bottom: 0;
+  }
+  
+}
+

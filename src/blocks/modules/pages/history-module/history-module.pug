@@ -1,285 +1,286 @@
 include ../../../components/table/table
 include ../../../components/tooltip/tooltip
 
-+table 
-  thead.thead
-    <tr >
-      <th style="width: 10.55%">
-        .thi ID
-      </th>
-      <th style="width: 15.99%">
-        .thi uID
-      </th>
-      <th style="width: 13.27%">
-        .thi Date/Time
-      </th>
-      <th style="width: 9.09%"> 
-        .thi From
-      </th>
-      <th style="width: 10.45%"> 
-        .thi To
-      </th>
-      <th style="width: 13.58%"> 
-        .thi Profit
-      </th>
-      <th style="width: 11.91%"> 
-        .thi Turnover
-      </th>
-      <th style="width: 15.15%"> 
-        .thi Status
-      </th>
-    </tr>
+.history-table-container
+  +table('history-table') 
+    .thead
+      <div class="tr" >
+        <div class="th">
+          | ID
+        </div>
+        <div class="th">
+          | uID
+        </div>
+        <div class="th">
+          | Date/Time
+        </div>
+        <div class="th"> 
+          | From
+        </div>
+        <div class="th"> 
+          | To
+        </div>
+        <div class="th">
+          | Profit
+        </div>
+        <div class="th">
+          | Turnover
+        </div>
+        <div class="th"> 
+          | Status
+        </div>
+      </div>
 
 
-  tbody.tbody
-    tr 
-      td
-        .tdi
-          strong 152368
-      td 
-        .tdi 
-          strong max049576gh5
-      td 
-        .tdi
-          strong 11.08.23
-          span 17:43
+    .tbody
+      .tr 
+        .td
+          
+            strong 152368
+        .td 
+          
+            strong max049576gh5
+        .td 
+          
+            strong 11.08.23
+            span 17:43
 
-      td 
-        .tdi
-          strong 0.1
-          span BTC
+        .td 
+          
+            strong 0.1
+            span BTC
 
-      td 
-        .tdi
-          strong 0.12568
-          span ETH
+        .td 
+          
+            strong 0.12568
+            span ETH
 
-      td 
-        .tdi
-          strong 0.23568945
-          span BTC
+        .td 
+          
+            strong 0.23568945
+            span BTC
 
-      td 
-        .tdi
-          strong 0.1
-      
-      td
-        .tdi
-          strong Remaining
-            +tooltip('xs')
+        .td 
+          
+            strong 0.1
+        
+        .td
+          
+            strong Remaining
+              +tooltip('xs')
 
-    tr 
-      td
-        .tdi
-          strong 152368
-      td 
-        .tdi 
-          strong max049576gh5
-      td 
-        .tdi
-          strong 11.08.23
-          span 17:43
+      .tr 
+        .td
+          
+            strong 152368
+        .td 
+          
+            strong max049576gh5
+        .td 
+          
+            strong 11.08.23
+            span 17:43
 
-      td 
-        .tdi
-          strong 0.1
-          span BTC
+        .td 
+          
+            strong 0.1
+            span BTC
 
-      td 
-        .tdi
-          strong 0.12568
-          span ETH
+        .td 
+          
+            strong 0.12568
+            span ETH
 
-      td 
-        .tdi
-          strong 0.23568945
-          span BTC
+        .td 
+          
+            strong 0.23568945
+            span BTC
 
-      td 
-        .tdi
-          strong 0.1
-      
-      td
-        .tdi
-          strong Remaining
-            +tooltip('xs')
+        .td 
+          
+            strong 0.1
+        
+        .td
+          
+            strong Remaining
+              +tooltip('xs')
 
-    tr 
-      td
-        .tdi
-          strong 152368
-      td 
-        .tdi 
-          strong max049576gh5
-      td 
-        .tdi
-          strong 11.08.23
-          span 17:43
+      .tr 
+        .td
+          
+            strong 152368
+        .td 
+          
+            strong max049576gh5
+        .td 
+          
+            strong 11.08.23
+            span 17:43
 
-      td 
-        .tdi
-          strong 0.1
-          span BTC
+        .td 
+          
+            strong 0.1
+            span BTC
 
-      td 
-        .tdi
-          strong 0.12568
-          span ETH
+        .td 
+          
+            strong 0.12568
+            span ETH
 
-      td 
-        .tdi
-          strong 0.23568945
-          span BTC
+        .td 
+          
+            strong 0.23568945
+            span BTC
 
-      td 
-        .tdi
-          strong 0.1
-      
-      td
-        .tdi
-          strong Remaining
-            +tooltip('xs')
+        .td 
+          
+            strong 0.1
+        
+        .td
+          
+            strong Remaining
+              +tooltip('xs')
 
-    tr 
-      td
-        .tdi
-          strong 152368
-      td 
-        .tdi 
-          strong max049576gh5
-      td 
-        .tdi
-          strong 11.08.23
-          span 17:43
+      .tr 
+        .td
+          
+            strong 152368
+        .td 
+          
+            strong max049576gh5
+        .td 
+          
+            strong 11.08.23
+            span 17:43
 
-      td 
-        .tdi
-          strong 0.1
-          span BTC
+        .td 
+          
+            strong 0.1
+            span BTC
 
-      td 
-        .tdi
-          strong 0.12568
-          span ETH
+        .td 
+          
+            strong 0.12568
+            span ETH
 
-      td 
-        .tdi
-          strong 0.23568945
-          span BTC
+        .td 
+          
+            strong 0.23568945
+            span BTC
 
-      td 
-        .tdi
-          strong 0.1
-      
-      td
-        .tdi
-          strong Remaining
-            +tooltip('xs')
+        .td 
+          
+            strong 0.1
+        
+        .td
+          
+            strong Remaining
+              +tooltip('xs')
 
-    tr 
-      td
-        .tdi
-          strong 152368
-      td 
-        .tdi 
-          strong max049576gh5
-      td 
-        .tdi
-          strong 11.08.23
-          span 17:43
+      .tr 
+        .td
+          
+            strong 152368
+        .td 
+          
+            strong max049576gh5
+        .td 
+          
+            strong 11.08.23
+            span 17:43
 
-      td 
-        .tdi
-          strong 0.1
-          span BTC
+        .td 
+          
+            strong 0.1
+            span BTC
 
-      td 
-        .tdi
-          strong 0.12568
-          span ETH
+        .td 
+          
+            strong 0.12568
+            span ETH
 
-      td 
-        .tdi
-          strong 0.23568945
-          span BTC
+        .td 
+          
+            strong 0.23568945
+            span BTC
 
-      td 
-        .tdi
-          strong 0.1
-      
-      td
-        .tdi
-          strong Remaining
-            +tooltip('xs')
+        .td 
+          
+            strong 0.1
+        
+        .td
+          
+            strong Remaining
+              +tooltip('xs')
 
-    tr 
-      td
-        .tdi
-          strong 152368
-      td 
-        .tdi 
-          strong max049576gh5
-      td 
-        .tdi
-          strong 11.08.23
-          span 17:43
+      .tr 
+        .td
+          
+            strong 152368
+        .td 
+          
+            strong max049576gh5
+        .td 
+          
+            strong 11.08.23
+            span 17:43
 
-      td 
-        .tdi
-          strong 0.1
-          span BTC
+        .td 
+          
+            strong 0.1
+            span BTC
 
-      td 
-        .tdi
-          strong 0.12568
-          span ETH
+        .td 
+          
+            strong 0.12568
+            span ETH
 
-      td 
-        .tdi
-          strong 0.23568945
-          span BTC
+        .td 
+          
+            strong 0.23568945
+            span BTC
 
-      td 
-        .tdi
-          strong 0.1
-      
-      td
-        .tdi
-          strong Remaining
-            +tooltip('xs')
+        .td 
+          
+            strong 0.1
+        
+        .td
+          
+            strong Remaining
+              +tooltip('xs')
 
-    tr 
-      td
-        .tdi
-          strong 152368
-      td 
-        .tdi 
-          strong max049576gh5
-      td 
-        .tdi
-          strong 11.08.23
-          span 17:43
+      .tr 
+        .td
+          
+            strong 152368
+        .td 
+          
+            strong max049576gh5
+        .td 
+          
+            strong 11.08.23
+            span 17:43
 
-      td 
-        .tdi
-          strong 0.1
-          span BTC
+        .td 
+          
+            strong 0.1
+            span BTC
 
-      td 
-        .tdi
-          strong 0.12568
-          span ETH
+        .td 
+          
+            strong 0.12568
+            span ETH
 
-      td 
-        .tdi
-          strong 0.23568945
-          span BTC
+        .td 
+          
+            strong 0.23568945
+            span BTC
 
-      td 
-        .tdi
-          strong 0.1
-      
-      td
-        .tdi
-          strong Remaining
-            +tooltip('xs')
+        .td 
+          
+            strong 0.1
+        
+        .td
+          
+            strong Remaining
+              +tooltip('xs')

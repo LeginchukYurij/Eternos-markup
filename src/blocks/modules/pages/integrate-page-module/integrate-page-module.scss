@@ -11,3 +11,32 @@
     margin-bottom: 72px;
   }
 }
+
+@media (max-width: 768px) {
+  .integrate-page-module {
+    h1 {
+      margin-bottom: 16px;
+    }
+
+    .features-row  {
+      margin-bottom: 24px;
+    }
+
+    .actions-row {
+      gap: 8px;
+      margin-bottom: 36px;
+
+      .primery-btn {
+        padding-left: 16px;
+        padding-right: 16px;
+        min-width: auto;
+        min-width: 123px;
+      }
+
+      .primery-btn {
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+    }
+  }
+}

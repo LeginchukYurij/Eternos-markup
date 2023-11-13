@@ -17,3 +17,31 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+
+  .exchanging-sending-module {
+    &__currencies {
+      padding-top: 8px;
+      padding-bottom: 16px;
+
+      img {
+        width: 149px;
+        height: 149px;
+      }
+
+       img:nth-child(2) {
+        margin-left: -50px;
+      }
+    }
+  }
+
+  .exchanging--sending .exchanging-module {
+    min-height: auto;
+  }
+
+  .exchanging-module__subtitle.g8 {
+    margin-top: -8px;
+  }
+ 
+}

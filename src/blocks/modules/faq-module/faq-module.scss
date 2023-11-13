@@ -11,3 +11,21 @@
     gap: 16px;
   }
 }
+
+@media (max-width: 768px) {
+  .faq-module {
+    padding-bottom: 0;
+    
+    &__title {
+      margin-bottom: 24px;
+    }
+
+    &__list  {
+      gap: 8px;
+
+      li:first-child .accordion-item {
+        padding-top: 0;
+      }
+    }
+  }
+}

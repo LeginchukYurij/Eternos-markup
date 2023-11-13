@@ -1,3 +1,6 @@
+include ../../components/btn/btn
+include ../../components/nice-select/nice-select
+
 nav.main-navigation 
   ul 
     li 
@@ -8,3 +11,10 @@ nav.main-navigation
       a(href="/contacts.html") Contacts
     li 
       a(href="/integrate.html") Integrate
+
+  +btn-button('button', 'connect-wallet primery-btn--brd hdd')
+    | Connect Wallet
+
+  +nice-select('lang-select hdd', 'lang')
+    option(value="Eng") Eng 
+    option(value="Ru") Ru 

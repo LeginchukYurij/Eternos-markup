@@ -48,3 +48,44 @@
     max-height: 100%;
   }
 }
+
+@media (max-width: 768px) {
+
+  .integrate-module {
+    padding-bottom: 0;
+  }
+
+
+  .logos-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+
+    .logo-item {
+      height: 57px;
+      padding: 11px;
+
+      img {
+        height: auto;
+        width: auto;
+        max-width: 122px;
+      }
+    }
+  }
+
+  .features-row {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 24px;
+
+    li {
+      font-size: rem(14);
+      stroke-linejoin: lh(16, 14);
+    }
+
+    li:not(:last-child):after {
+      display: none;
+      padding: 0;
+    }
+  }
+}

@@ -482,3 +482,50 @@ article {
     background-size: contain;
     background-repeat: no-repeat;
 }
+
+.noscroll {
+    overflow: hidden;
+}
+
+@media (max-width: 1025px) {
+    .section {
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding-top: 36px;
+        padding-bottom: 36px;
+    }
+
+    main, .main-page {
+        padding-top: 36px;
+        padding-bottom: 72px;
+    }
+
+    .page-description  {
+        font-size: rem(14);
+        line-height: lh(16, 14);
+        margin-bottom: 24px;
+    }
+
+    section h2, section .h2 {
+        margin-bottom: 24px;
+    }
+
+    article h1 {
+        width: calc(100% + 2px);
+        margin-bottom: 24px;
+    }
+
+    article p {
+        font-size: rem(14);
+        line-height: lh(24, 14); 
+    }
+
+    body, main {
+        background-image: none;
+    }
+}

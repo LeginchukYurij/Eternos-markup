@@ -29,6 +29,8 @@ block content
 			button(type="button" data-trigger-modal="order-address").primery-btn.upper Change payout address
 			<br>
 			button(type="button" data-trigger-modal="change-password").primery-btn.upper Change password
+			<br>
+			button(type="button" data-trigger-modal="send").primery-btn.upper YOU SEND
 
 
 	include ../../blocks/modules/footer/footer
@@ -57,6 +59,9 @@ block content
 
 	+popupContainer('change-password')
 			include ../../blocks/modules/popups/change-popup/change-pass-popup
+		
+	+popupContainer('send')
+			include ../../blocks/modules/popups/send-recive-popup/send-recive-popup
 
 
 block scripts

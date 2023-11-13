@@ -23,3 +23,21 @@
     color: #fff;
   }
 }
+
+@media (max-width: 768px) {
+  .wallets {
+    gap: 8px;
+  }
+
+  .wallet {
+    padding: 8px;
+    gap: 10px;
+    font-size: rem(14);
+    line-height: lh(16, 14); 
+    min-height: 46px;
+
+    img {
+      max-width: 25px;
+    }
+  }
+}

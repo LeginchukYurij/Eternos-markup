@@ -118,3 +118,126 @@
 .settings .cashback-module {
   display: none;
 }
+
+@media (max-width: 1090px) {
+  .settings-module {
+    margin-top: 7px;
+    &__grid {
+        grid-template-columns: 100%;
+        gap: 16px;
+    }
+  }
+
+}
+
+
+@media (max-width: 768px) {
+  .settings-item {
+    &__field {
+      span {
+        font-size: rem(14);
+        line-height: lh(16, 14);
+        margin-bottom: 8px;
+      }
+  
+      strong {
+        font-size: rem(14);
+        line-height: lh(16, 14);
+        word-break: break-all;
+      }
+    }
+
+    &__actions .primery-btn {
+      min-width: 94px;
+        padding: 8px 10px;
+        font-size: rem(14);
+        line-height: lh(16, 14);
+    }
+  }
+
+  .settings-box {
+    padding: 16px 8px;
+  }
+
+  .settings-item + .settings-item {
+    margin-top: 32px;
+  }
+
+  .fa2 {
+    &__control-wrapper {
+      margin-top: -5px;
+    }
+
+    &__title {
+      gap: 10px;
+
+      strong {
+        font-size: rem(14);
+        line-height: lh(16, 14);
+      }
+
+      small {
+        font-size: rem(12);
+        line-height: lh(18, 14);
+      }
+    }
+
+    &__text {
+      span {
+        font-size: rem(14);
+        line-height: lh(16, 14);
+      }
+
+      strong {
+        font-size: rem(14);
+        line-height: lh(16, 14);
+      }
+    }
+  }
+
+  .apps {
+    margin-top: 16px;
+
+    .apps__title {
+      font-size: rem(14);
+      line-height: lh(16, 14);
+    }
+  }
+
+  .app {
+    gap: 8px;
+
+    .ic {
+      width: 16px;
+      min-width: 16px;
+    }
+
+    strong {
+      font-size: rem(14);
+      line-height: lh(16, 14);
+    }
+  }
+
+
+  .subscribtion-level {
+    strong {
+      font-size: rem(14);
+      line-height: lh(16, 14);
+      margin-bottom: 8px;
+    }
+
+    .level {
+      span {
+        font-size: rem(14);
+        line-height: lh(16, 14);
+        margin-bottom: 4px;
+      }
+
+      strong {
+        font-size: rem(14);
+        line-height: lh(16, 14);
+        margin-bottom: 0;
+      }
+    }
+  }
+}

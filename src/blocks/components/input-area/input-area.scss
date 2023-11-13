@@ -2,6 +2,21 @@
   width: 100%;
   position: relative;
 
+  &--search {
+    img {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 9px;
+      z-index: 1;
+    }
+
+    input {
+      padding-left: 40px;
+      
+    }
+  }
+
   &.password input {
     padding-right: 50px;
   }
@@ -124,5 +139,49 @@ input:-webkit-autofill:focus {
     &:nth-child(2) {
       fill: var(--accent);
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .input-wrap input {
+    height: 48px;
+    padding: 0 8px;
+    font-size: rem(14);
+    line-height: lh(16, 14);
+
+
+    &::placeholder {
+      font-size: rem(14);
+      line-height: lh(16, 14); 
+    }
+  }
+
+  .input-wrap textarea {
+    min-height: 134px;
+    padding: 8px;
+    font-size: rem(14);
+    line-height: lh(16, 14);
+    
+
+    &::placeholder {
+      font-size: rem(14);
+      line-height: lh(16, 14); 
+    }
+  }
+
+  .select-wrap .select {
+    height: 48px;
+    padding: 16px 8px;
+    font-size: rem(14);
+    line-height: lh(16, 14);
+
+    &:after {
+      right: 8px;
+    }
+  }
+
+  .toggle-pass-visibility {
+    right: 8px;
+    width: 24px;
   }
 }

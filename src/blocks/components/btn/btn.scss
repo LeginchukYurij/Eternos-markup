@@ -85,3 +85,33 @@
   }
   
 }
+
+
+@media (max-width: 768px) {
+  .primery-btn {
+    padding: 3.5px 36px;
+    font-size: rem(16);
+    line-height: lh(20, 16); 
+    min-width: auto;
+    border-radius: 5px;
+
+    &.small {
+      font-size: rem(14);
+      line-height: lh(24, 14); 
+    }
+
+    &.xxl {
+      padding: 17px 25px;
+      font-size: rem(16);
+      line-height: lh(20, 16);
+      border-radius: 5px; 
+    }
+
+    &.fzm  {
+      font-size: rem(14);
+      line-height: lh(16, 14); 
+    }
+  }
+
+
+}
