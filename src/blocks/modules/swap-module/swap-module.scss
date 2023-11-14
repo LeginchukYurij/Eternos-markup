@@ -102,6 +102,15 @@
     z-index: 1;
     background: none;
     border: none;
+
+    img {
+      transition: transform .4s ease-in;
+    }
+   
+
+    &:hover img {
+      transform: rotate(180deg);
+    }
   }
 }
 

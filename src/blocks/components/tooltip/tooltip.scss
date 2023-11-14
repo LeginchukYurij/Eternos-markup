@@ -5,6 +5,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  z-index: 2;
 
   &__ic, &__ic svg  {
       width: 100%;
@@ -19,6 +21,46 @@
     min-width: 15px;
     height: 15px; 
   }
+
+  &:hover {
+    .tooltip__body {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &__body {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    top: calc(100% + 5px);
+    background: #222;
+    color: #fff;
+    font-size: rem(14);
+    line-height: lh(16, 14);
+    padding: 16px 16px;
+    border-radius: 3px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .2s ease-in;
+
+
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: -5px;
+      left: 0;
+      height: 5px;
+      width: 100%;
+    }
+
+    div {
+      width: 228px;
+      text-transform: none;
+    }
+  }
 }
 
 
@@ -27,5 +69,20 @@
     width: 16px;
     min-width: 16px;
     height: 16px;
+
+
+    &:hover {
+      .tooltip__body {
+        transform: translateX(0) translateY(0);
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
+    &__body {
+      transform: translateX(0) translateY(20px);
+      left: auto;
+      right: 0;
+    }
   }
 }
