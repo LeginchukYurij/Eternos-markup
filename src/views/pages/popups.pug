@@ -31,6 +31,8 @@ block content
 			button(type="button" data-trigger-modal="change-password").primery-btn.upper Change password
 			<br>
 			button(type="button" data-trigger-modal="send").primery-btn.upper YOU SEND
+			<br>
+			button(type="button" data-trigger-modal="recive").primery-btn.upper YOU RECEIVE
 
 
 	include ../../blocks/modules/footer/footer
@@ -62,6 +64,9 @@ block content
 		
 	+popupContainer('send')
 			include ../../blocks/modules/popups/send-recive-popup/send-recive-popup
+
+	+popupContainer('recive')
+			include ../../blocks/modules/popups/send-recive-popup/recive
 
 
 block scripts
